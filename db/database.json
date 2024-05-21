@@ -1,0 +1,19 @@
+[
+  {
+    "firstName": "Samuel",
+    "lastName": "Adeleke",
+    "email": "jemibol@gmail.com",
+    "number": "08100000000",
+    "gender": "male",
+    "id": 1
+  },
+  {
+    "firstName": "Femi",
+    "lastName": "Adesina",
+    "otherName": "Olu",
+    "email": "olufem@gmail.com",
+    "number": "08100000000",
+    "gender": "female",
+    "id": 2
+  }
+]

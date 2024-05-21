@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submission</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="git-cont">
+    <label>Link to Github</label>
+    <a href=""></a>
+  </div>
+  <form  action="http://localhost:5000/submit" method="POST" class="form-cont">
+    <label for="name">First Name:</label>
+    <input type="text" name="firstName" id="firstName" >
+    
+    <br>
+    <label for="name">Last Name:</label>
+    <input type="text" name="lastName" id="lastName" >
+    
+    <br>
+    <label for="name">Other Names:</label>
+    <input type="text" name="otherName" id="otherName" >
+     
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    
+    <br>
+    <label for="number">Phone Number:</label>
+    <input type="tel" name="number" id="number">
+    
+    <br>
+    <label for="gender">Gender:</label>
+     <select id="gender"name="gender" required>
+     <option value="male">Male</option>
+     <option value="female">Female</option>               
+     </select>
+   
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+ 
+   
+  
+</body>
+</html>

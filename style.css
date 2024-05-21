@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    
+
+}
+
+.form-cont{
+   display:flex;
+flex-direction: column;
+width: 60%;
+margin:auto;
+}
+
+input, select{
+    height: 2em;
+}
+
+button{
+padding: .7em;
+}
+.git-cont{
+    text-align: center;
+    margin-top: .8em;
+}
