@@ -110,6 +110,6 @@ function isValidEmail(email) {
 const server = createServer(handler)
 
 // listen to the server
-server.listen(5000, ()=>{
+server.listen(5000, "zuri-node-form-validation.vercel.app", ()=>{
     console.log("listening on localhost")
 })
