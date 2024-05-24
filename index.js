@@ -29,8 +29,26 @@ function isValidEmail(email) {
 
 // handles the validation and submission of the group of inputs
   const handler = ((req, res)=>{
-    
-    if(req.method === "POST" && req.url === "/submit"){
+
+    // if(req.url === "/"){
+    //     res.sendFile(path.join(__dirname, 'index.html'));
+    // }
+
+
+
+
+    if (req.url === '/') {
+    // Read the HTML file
+    fs.readFile('index.html', 'utf8', (err, data) => {
+      if (err) {
+        res.writeHead(500, { 'Content-Type': 'text/plain' });
+        res.end('Error reading HTML file');
+      } else {
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.end(data);
+      }
+    });
+  } else if(req.method === "POST" && req.url === "/submit"){
         let body = ""
 
         req.on('data', (chunk) => {

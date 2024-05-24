@@ -4,20 +4,14 @@
       {
         "src": "./index.js",
         "use": "@vercel/node"
-      },
-      {
-        "src": "./index.html",
-        "use": "@vercel/static"
       }
+      
     ],
     "routes": [
+     
       {
-        "src": "/submit",
-       "dest": "/index.js"
-      },
-      {
-        "src": "/",
-       "dest": "/index.html"
+        "src": "/(.*)",
+       "dest": "/"
       }
     ]
   
