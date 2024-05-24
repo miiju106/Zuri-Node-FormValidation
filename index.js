@@ -110,6 +110,6 @@ function isValidEmail(email) {
 const server = createServer(handler)
 
 // listen to the server
-server.listen(5000, "localhost", ()=>{
+server.listen(5000, ()=>{
     console.log("listening on localhost")
 })
